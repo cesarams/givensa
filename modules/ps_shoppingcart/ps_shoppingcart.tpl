@@ -26,7 +26,9 @@
   <div class="blockcart cart-preview {if $cart.products_count > 0}active{else}inactive{/if}" data-refresh-url="{$refresh_url}">
     <div class="header">
       {if $cart.products_count > 0}
-        <a rel="nofollow" href="{$cart_url}">
+        {* Johan - By using show&checkout directly, we bypass the cart summary screen (cart-detailed-actions.tpl) 
+        <a rel="nofollow" href="{$cart_url}"> *}
+        <a rel="nofollow" href="{$urls.pages.cart}?action=show&checkout">
       {/if}
         <i class="material-icons shopping-cart">shopping_cart</i>
         <span class="hidden-sm-down">{l s='Cart' d='Shop.Theme.Checkout'}</span>
