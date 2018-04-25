@@ -68,10 +68,7 @@
               {/block}
             </div>
             <div class="col-md-4">
-              {block name='cart_summary'}
-                {include file='checkout/_partials/cart-summary.tpl' cart = $cart}
-              {/block}
-              {hook h='displayReassurance'}
+              {* {hook h='displayReassurance'} *}
             </div>
           </div>
         </section>

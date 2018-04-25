@@ -76,11 +76,12 @@
           </div>
         {/block}
 
-{*
-        {block name='hook_reassurance'}
-          {hook h='displayReassurance'}
-        {/block}*}
-
+        <div class="d-none d-lg-block">
+          {block name='hook_reassurance'}
+            {hook h='displayReassurance'}
+          {/block}
+        </div>
+        
       </div> 
 
     </div>
